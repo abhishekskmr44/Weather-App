@@ -3,11 +3,12 @@ import './App.css';
 import Search from './search/search';
 import CurrentWeather from './components/current-weather/current-weather';
 import {WEATHER_API_URL,WEATHER_API_KEY} from "./api";
+import { useState } from 'react';
 
 
 function App() {
 
-const [currentWeather, setCurrentWeather] = 
+const [currentWeather, setCurrentWeather] = useState(null)
 
 
 
